@@ -1,0 +1,45 @@
+/*头部*/
+div.header{
+    width:100%;
+    height:500px;
+    background: #f5204b;
+    color:#fff;
+}
+a.logo{
+    float:left;
+    margin:50px;
+
+}
+div nav{
+    float:right;
+}
+div.middle>div>p{
+    color: #777777;
+}
+div.middle>div>p>span{
+    color:red;
+}
+div.myimg{
+    width: 100%;
+}
+div.myjc{
+    display:flex;
+   justify-content: center;
+    align-items: center;
+
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    div.myjc>p{
+        height:200px;
+        display:inline-block;
+        border:1px solid red;
+        overflow: auto;
+    }
+}
+@media screen and (max-width:767px){
+    div>div.mymt{
+        margin-top: 30px;
+        line-height: 30px;
+        list-style: none;
+    }
+}

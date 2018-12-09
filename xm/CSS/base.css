@@ -1,0 +1,12 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dt,dd,dl,div,form,fieldset,legend,input{
+    margin:0;padding:0;
+}
+ol,ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+div textarea{
+    resize: none;
+}

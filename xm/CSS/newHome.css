@@ -1,0 +1,235 @@
+
+div{
+    box-sizing: border-box;
+    width:100%;
+}
+div.header img.bg{
+    width:100%;
+    height:100%;
+}
+div.header{
+    position: relative;
+    border:1px solid #000;
+}
+div.logo{
+    position:absolute;
+    top:50px;/*有问题，待调试*/
+    left:50px;
+    width:15%;
+}
+
+div.navi ul{
+    position: absolute;
+    float: right;
+    top:50px;
+    right:30px;
+}
+div.tit{
+    position: absolute;
+    float: left;
+}
+/*网页中间的内容*/
+div.tuwen{
+    border:1px solid #000;
+    line-height: 30px;
+
+}
+div.w1{
+    width:450px;
+    height:500px;
+    border:1px solid red;
+    color:#ccc;
+}
+/*名言*/
+div.mingy{
+    border:1px solid green;
+    margin-top: 80px;
+    text-align: center;
+}
+div.mingy2{
+    color: #cccccc;
+}
+/*轮播图*/
+img.imgb{
+    width:100%;
+    height:100%;
+}
+/*表单&wen*/
+textarea{
+    width:100%;
+    height:250px;
+}
+div button.an{
+    width: 100%;
+    border-color: white;
+}
+div.bgc{
+    background: #222222;
+}
+div textarea{
+    resize: none;
+}
+/*bottom*/
+div.bottom{
+    width:100%;
+    height:300px;
+}
+/*底部导航*/
+input.dan{
+    height:32px;
+    border-radius: 3px;
+    border:0;
+}
+a:hover{
+    text-decoration: none;!important;
+}
+div.middle{
+    text-align: center;
+}
+
+
+
+/*pc*/
+@media screen and (min-width:992px){
+    .contain{
+        margin: 0 auto;
+    }
+   
+   div.navi,ul,li{
+       float: left;
+       padding-right:15px;
+   }
+    div.navi button{
+        top:40px;
+        right:50px;
+    }
+    div.tit{
+        top:250px;
+        left:350px;    /*  top: 206px;left: 198px;*/
+        width:50%;
+        text-align: center;
+        font-size: 20px;
+    }
+    /*网页中间样式 祈祷图片旁的文字介绍*/
+    div.tuwen{
+        width:560px;
+        height:650px;
+        text-align: center;
+        box-shadow:-1px 0px 2px 0px black;
+        padding-left:80px;
+    }
+    div.word{
+        top:30px;
+    }
+    div.qidao{
+        position:absolute;
+        left:150px;
+    }
+    div.b1{
+        line-height: 30px;
+    }
+    /*底部导航*/
+    div.bt{
+        margin-top: 100px;
+    }
+
+   
+}
+
+/*pad*/
+@media screen and (max-width:991px) and (min-width:768px){
+    div.tit{
+      top:138px;
+      left:12px;
+      text-align: center;
+      font-size: 13px;
+    }
+    div.navi ul li{/*右边导航栏样式*/
+        float: left;
+        padding-right:15px;
+    }
+    div.navi{
+        font-size:12px;
+    }
+    div.log{
+        width:50%;
+    }
+    /*网页中间部分样式*/
+    div.tuwen{
+        height:650px;
+    }
+    div.w2 p{
+        line-height: 50px;
+    }
+    div.qidao img{
+        margin-left: 70px;
+    }
+    div.bt{
+        margin-top: 100px;
+    }
+
+}
+
+/*phone*/
+@media screen and (max-width:767px){
+    div nav ul li{
+        float:left;
+        font-size:8px;
+    }
+    div.navi ul{
+        position:absolute;
+        top:0;
+
+    }
+    div.navi ul li.y1{
+        display:none;
+    }
+   div.logo a img{
+        width:80px;
+        position:absolute;
+       top:-13px;
+       left:-39px;
+   }
+   div.tit{
+       position: absolute;
+       top:195px;
+       left: 0;
+       border:1px solid #000;
+   }
+   div.word{
+       position:absolute;
+       top:350px;
+       left:0;
+       border:1px solid red;
+   }
+    /*网页中间部分*/
+
+    div.qidao img:after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+    div.qidao img{
+        width:200%;
+
+    }
+    div.qidao{
+      margin-top: 0;
+
+
+    }
+    div.middle{
+        float:left;
+        padding-top: 310px;
+        text-align: center;
+    }
+    /*表单*/
+    div.taber1{
+        margin-top: 50px;
+    }
+    /*底部导航*/
+    div.bottom{
+      float: left;
+    }
+
+}
